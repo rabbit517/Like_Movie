@@ -3,6 +3,64 @@
 <head>
  <title>Like_Movie-굿 윌 헌팅</title>
  <meta charset="utf-8">
+ <style>
+ a {
+   color:black;
+   text-decoration:none;
+ }
+ h1 {
+   font-size:300%;
+   text-align:left;
+   border-bottom:1px solid black;
+   margin:0;
+   padding:20px;
+ }
+ h2{
+   font-size: 180%
+ }
+ .active {
+   color:red;
+ }
+ #hamlet ul {
+
+   width:130px;
+   margin:0;
+   padding:10px;
+   padding-left: 30px;
+   font-size: 100%;
+
+ }
+
+ body {
+   margin:0;
+ }
+
+ #hamlet {
+   display:grid;
+   grid-template-columns: 180px 1fr;
+ }
+ #hamlet #othello{
+   padding:20px;
+   padding-top:10px;
+   border-left:1px solid black;
+ }
+
+ @media(max-width:785px){
+   #hamlet{
+     display:block;
+     border:0;
+   }
+   #hamlet #othello{
+     margin:0;
+     padding:20px;
+     padding-top:0;
+     border-left:none;
+
+ }
+
+ </style>
+
+
  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SP1FHTPLS4"></script>
 <script>
@@ -13,14 +71,20 @@
   gtag('config', 'G-SP1FHTPLS4');
 </script>
 </head>
+
+
 <body>
   <h1><a href="index.html">Like_Movie</a></h1>
+  <div id="hamlet">
+    <div>
   <ul>
     <li><a href="1.html">죽은 시인의 사회</a></li>
-    <li><a href="2.html">굿 윌 헌팅</a></li>
+    <li><a href="2.html" class="a active">굿 윌 헌팅</a></li>
     <li><a href="3.html">트루먼 쇼</a></li>
   </ul>
+    </div>
 
+  <div id="othello">
   <h2>굿 윌 헌팅(Good Will Hunting | 1997)</h2>
 
   <img src="GoodWillHuntingPoster.jpg" width=100%>
@@ -47,6 +111,8 @@
     결국은 가장 후회를 덜 할 수 있는 선택을 해야할 것이다. 그런 선택을 하기 위해서는
     <strong>사랑</strong>이 전제되어야 한다.
   </p>
+  </div>
+</div>
 
   <p>
 
